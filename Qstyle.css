@@ -1,0 +1,140 @@
+/*navbar start here*/
+.nav-custom .actived {
+    color: #A7171A;
+}
+
+.nav-custom .not-active{
+    color: white;
+}
+
+
+.nav-custom .actived:hover {
+  color: white;
+  background-color: #A7171A;
+}
+
+.nav-custom .not-active:hover {
+  color: #A7171A;
+  background-color: white;
+}
+
+header {
+    border-bottom: 0.1vw solid #808080;
+    width: 50%;
+    margin: 0 auto 1vw auto;
+}
+
+/*navbar end here*/
+
+body {
+    background-color: #111;
+    font-family: "Times New Roman", Georgia, Garamond;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 5vw;
+}
+
+/*accordion starts here*/
+.accordion {
+    background-color: #C0C0C0;
+    color: #A7171A;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 0.1vw solid #71797E;
+    text-align: left;
+    outline: none;
+    font-size: 1.5vw;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    color: #A7171A;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #7393B3;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+/*accordion ends here*/
+
+/*footer start here*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1vw solid grey;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #111;
+}
+
+/*copyright*/
+.watermark {
+    color: white;
+}
+
+/*media here*/
+.fa:hover {
+    opacity: 0.7;
+    color: #A7171A;
+    background-color: #E5E4E2;
+}
+
+.fa {
+    padding: 0.8vw 0.8vw;
+    font-size: 2vw;
+    width: 3vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 1vw 1vw;
+    border-radius: 50%;
+    color: black;
+    background-color: #A7171A;
+}
+
+/*navbar here*/
+#bar {
+  font-size: 12px;
+  font-weight: bold;
+}
+#bar li {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  padding: 1.1vw 2vw 0 2vw;
+}
+#bar li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#bar li:nth-child(odd) {
+    color: #A7171A;
+}
+
+#bar li:hover {
+    color: #C0C0C0;
+}
+/*footer ends here*/

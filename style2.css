@@ -1,0 +1,126 @@
+body {
+    background-color: #111;
+    font-family: "Times New Roman", Georgia, Garamond;
+}
+/*navbar start here*/
+.nav-custom .actived {
+    color: #A7171A;
+}
+
+.nav-custom .not-active{
+    color: white;
+}
+
+
+.nav-custom .actived:hover {
+  color: white;
+  background-color: #A7171A;
+}
+
+.nav-custom .not-active:hover {
+  color: #A7171A;
+  background-color: white;
+}
+
+.container {
+    border-bottom: 0.1vw solid #808080;
+    width: 50%;
+    margin: 0 auto 1vw auto;
+    padding-top: 1vw;
+}
+/*navbar end here*/
+
+h1 {
+    color: #A7171A;
+    margin: 5vw 2vw;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10vw;
+	margin: 4vw 7vw 6vw 7vw;
+	column-gap: 8vw;
+	row-gap: 5vw;
+}
+
+.card {
+    box-shadow: 3px 3px 6px rgba(255,255,255,0.3);
+    transition: 0.5s;
+    background-color: #111;
+}
+
+.card:hover {
+	box-shadow: 4px 5px 6px rgba(167,23,26,0.3);
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h3, p {
+    text-align: center;
+    color: white;
+}
+
+
+
+/*footer start here*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1vw solid grey;
+    align-items: center;
+    background-color: #111;
+}
+
+/*copyright*/
+.watermark {
+    color: white;
+}
+
+/*media here*/
+.fa:hover {
+    opacity: 0.7;
+    color: #A7171A;
+    background-color: #E5E4E2;
+}
+
+.fa {
+    padding: 0.7vw 0.7vw;
+    font-size: 2vw;
+    width: 3vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.8vw 0.8vw;
+    border-radius: 50%;
+    color: black;
+    background-color: #A7171A;
+}
+
+/*navbar here*/
+#bar {
+  font-size: 12px;
+  font-weight: bold;
+}
+#bar li {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  padding: 1.1vw 2vw 0 2vw;
+}
+#bar li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#bar li:nth-child(odd) {
+    color: #A7171A;
+}
+
+#bar li:hover {
+    color: #C0C0C0;
+}
+/*footer ends here*/

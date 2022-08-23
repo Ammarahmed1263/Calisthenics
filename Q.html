@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="Qstyle.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Q&A</title>
+    </head>
+
+    <body>
+        <header>
+            <!--navbar-->
+            <ul class = "nav pt-1 justify-content-center">
+                <li class="nav-item nav-custom">
+                    <a class="nav-link actived" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item nav-custom">
+                    <a class="nav-link not-active" href="cali.html">Calisthenics</a>
+                </li>
+
+                <li class="nav-item nav-custom">
+                    <a class="nav-link actived" href="about.html">About us</a>
+                </li>
+
+                <li class="nav-item nav-custom">
+                    <a class="nav-link not-active" href="Q.html">Q&A</a>
+                </li>
+            </ul>
+        </header>
+
+        <h1>Questions? Look here.</h1>
+
+        <button class="accordion">Why are did that page?</button>
+        <div class="panel">
+            <p>That was CS50's problem set 8 i have chose that idea because it will be a great combination between two my most favourite hobbies(programming, practicing calisthenics).</p>
+        </div>
+
+        <button class="accordion">What is CS50?</button>
+        <div class="panel">
+            <p>Introduction to Computer Science from Harvard, better known as CS50, is the largest course on the Harvard campus and more than 2,000,000 learners worldwide have registered for the course on edX.</p>
+        </div>
+
+        <button class="accordion">What are the shipping times and costs?</button>
+        <div class="panel">
+            <p>This depends on the country you want to receive the parcel in. The best way to check the shipping times and costs is by entering the checkout process. After filling your address, you can see the shipping details. You won't be charged at this point.</p>
+        </div>
+
+        <button class="accordion">When will my product be back in stock?</button>
+        <div class="panel">
+            <p>If your product is not available at the moment it might be that it's taken off sale. Or we didn't foresee a rush for a specific product. If so it doesn't take more than 1-2 weeks till we are back in stock. </p>
+        </div>
+
+        <button class="accordion">Where are you located?</button>
+        <div class="panel">
+            <p>Our Headquarters is located in Egypt, Also we have other offline branches all over the world.</p>
+        </div>
+
+        <button class="accordion">How do i contact support?</button>
+        <div class="panel">
+            <p>You can send us at NotRealAccount@gmail.com, typically we response after not more than one week.</p>
+        </div>
+
+        <button class="accordion">Do you usually have offers?</button>
+        <div class="panel">
+            <p>yes offer 40% off each month for first 20 customers if it's your first order you can use promo(FIRST50) to get 50% off.</p>
+        </div>
+
+        <button class="accordion">How to delete my account?</button>
+        <div class="panel">
+            <p>you can go to settings > account settings > privacy > more > delete my account > I agree.</p>
+        </div>
+
+        <footer>
+            <div class = "watermark">© 2021 Company, Inc</div>
+            <ul id = "bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cali.html">Calisthenics</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="Q.html">Q&A</a></li>
+            </ul>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+          </footer>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                }
+                else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        </script>
+    </body>
+</html>
